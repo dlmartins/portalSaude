@@ -13,18 +13,7 @@
       }
       .principal {
         height: 700px;
-        background: #5788c3;
-        background: -webkit-linear-gradient(
-          to left,
-          rgba(87, 136, 195, 0.5),
-          rgba(228, 228, 232, 0.5)
-        );
-        background: linear-gradient(
-          to left,
-          rgba(87, 136, 195, 0.5),
-          rgba(228, 228, 232, 0.5)
-        );
-        background-image: url("/images/25764.jpg");
+        background-image: url("/images/Background2.jpeg");
         background-size: cover;
       }
       .menu {
@@ -43,13 +32,7 @@
       .meio {
         height: 640px;
         display: flex;
-        justify-content: center;
-      }
-      .meio img {
-        display: flex;
-        padding: 0px 50px;
-        width: 500px;
-        align-self: center;
+        justify-content: start;
       }
       .meio form {
         padding: 0px 50px;
@@ -60,64 +43,85 @@
   </head>
   <body>
     <div class="principal">
-      <header class="d-flex">
-        <img src="/images/logo.png" alt="Portal Saúde" class="offset-2" />
-        <nav class="d-flex menu">
-          <ul class="d-flex mx-auto mt-3">
-            <li><a href="#planoDeSaude"></a>Planos de Saúde</li>
-            <li><a href="#quemSomos"></a>Quem Somos</li>
-            <li><a href="#Contato"></a>Contato</li>
-          </ul>
-        </nav>
-      </header>
-      <div class="meio">
-        <div class="">
-          <img src="/images/medico.png" alt="médico1" class="img-fluid" />
+      <!-- <img src="/images/Background1.png" alt="dr" class="img-fluid"> -->
+      <header class="conteiner h-10">
+        <div class="row">
+          <div class="col-4">
+            <img src="/images/logo.png" alt="Portal Saúde" class="offset-4" />
+          </div>
+          <div class="col-8">
+            <nav class="menu">
+              <ul class="d-flex mx-auto mt-3 nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#planoDeSaude"></a>Planos de Saúde
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link href="#quemSomos"></a>Quem Somos
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link href="#Contato"></a>Contato
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <form>
-          <div class="form-group">
-            <label for="Nome">Nome</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputName"
-              aria-describedby="emailHelp"
-              placeholder=""
-            />
+      </header>
+      <!-- <div class="meio offset-3 align-items-end"> -->
+      <div class="conteiner-fluid">
+        <div class="row">
+          <h1>HeadLine importante do site</h1>
+        </div>
+        <div class="row align-items-end">
+          <form class="col-12 col-md-6 p-5">
+            <div class="form-group mb-3">
+              <label for="Nome">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                aria-describedby="emailHelp"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                aria-describedby="emailHelp"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="telefone">Telefone</label>
+              <input
+                type="number"
+                class="form-control"
+                id="inputTelefone"
+                placeholder=""
+              />
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="inputPf" />
+              <label class="form-check-label" for="exampleCheck1"
+                >Pessoa física</label
+              >
+            </div>
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="inputPj" />
+              <label class="form-check-label" for="exampleCheck1"
+                >Pessoa jurídica</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary offset-4">
+              ENVIAR
+            </button>
+          </form>
+          <div class="col-md-6">
+            <img src="images/dr.png" alt="dr" class="img-fluid" />
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              aria-describedby="emailHelp"
-              placeholder=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="telefone">Telefone</label>
-            <input
-              type="number"
-              class="form-control"
-              id="inputTelefone"
-              placeholder=""
-            />
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="inputPf" />
-            <label class="form-check-label" for="exampleCheck1"
-              >Pessoa física</label
-            >
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="inputPj" />
-            <label class="form-check-label" for="exampleCheck1"
-              >Pessoa jurídica</label
-            >
-          </div>
-          <button type="submit" class="btn btn-primary">ENVIAR</button>
-        </form>
+        </div>
       </div>
     </div>
     <div class="inferior"></div>
