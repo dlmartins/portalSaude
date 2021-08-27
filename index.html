@@ -12,8 +12,8 @@
         height: 60px;
       }
       .principal {
-        height: 700px;
-        background-image: url("/images/Background2.jpeg");
+        height: 650px;
+        background-image: url("/images/Background1.jpeg");
         background-size: cover;
       }
       .menu {
@@ -26,8 +26,15 @@
         margin: 0px 25px;
       }
       .inferior {
-        height: 100px;
+        height: 150px;
         background-color: azure;
+      }
+      .inferior img{
+        height: 75px;
+        width: 150px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        
       }
       .meio {
         height: 640px;
@@ -44,14 +51,14 @@
   <body>
     <div class="principal">
       <!-- <img src="/images/Background1.png" alt="dr" class="img-fluid"> -->
-      <header class="conteiner h-10">
+      <header class="conteiner">
         <div class="row">
           <div class="col-4">
             <img src="/images/logo.png" alt="Portal Saúde" class="offset-4" />
           </div>
           <div class="col-8">
             <nav class="menu">
-              <ul class="d-flex mx-auto mt-3 nav">
+              <ul class="d-flex mt-3 offset-2 nav">
                 <li class="nav-item">
                   <a class="nav-link" href="#planoDeSaude"></a>Planos de Saúde
                 </li>
@@ -68,12 +75,14 @@
       </header>
       <!-- <div class="meio offset-3 align-items-end"> -->
       <div class="conteiner-fluid">
-        <div class="row">
-          <h1>HeadLine importante do site</h1>
-        </div>
-        <div class="row align-items-end">
-          <form class="col-12 col-md-6 p-5">
-            <div class="form-group mb-3">
+        <div class="row align-items-end p-5 offset-1">
+          <div class="row">
+            <h1 class="col-md-6 text-center pt-3">Conheça os melhores Planos de Saúde do mercado</h1>
+            <div class="w-100"></div>
+            <h5 class="col-md-6 text-center my-4 fw-light">Receba um atendimento totalmente personalizado</h5>
+          </div>
+          <form class="col-12 col-md-6 px-5 offset-1">
+            <div class="form-group mb-3 col-md-6">
               <label for="Nome">Nome</label>
               <input
                 type="text"
@@ -83,7 +92,7 @@
                 placeholder=""
               />
             </div>
-            <div class="form-group mb-3">
+            <div class="form-group mb-3 col-md-6">
               <label for="email">Email</label>
               <input
                 type="email"
@@ -93,10 +102,10 @@
                 placeholder=""
               />
             </div>
-            <div class="form-group mb-3">
+            <div class="form-group mb-3 col-md-6">
               <label for="telefone">Telefone</label>
               <input
-                type="number"
+                type="tel"
                 class="form-control"
                 id="inputTelefone"
                 placeholder=""
@@ -104,27 +113,35 @@
             </div>
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="inputPf" />
-              <label class="form-check-label" for="exampleCheck1"
+              <label class="form-check-label" for="check1"
                 >Pessoa física</label
               >
             </div>
             <div class="form-check mb-3">
               <input type="checkbox" class="form-check-input" id="inputPj" />
-              <label class="form-check-label" for="exampleCheck1"
+              <label class="form-check-label" for="check2"
                 >Pessoa jurídica</label
               >
             </div>
-            <button type="submit" class="btn btn-primary offset-4">
+            <button type="submit" class="btn btn-primary offset-2">
               ENVIAR
             </button>
           </form>
-          <div class="col-md-6">
-            <img src="images/dr.png" alt="dr" class="img-fluid" />
-          </div>
         </div>
       </div>
     </div>
-    <div class="inferior"></div>
+    <div class="inferior conteiner">
+      <div class="row justify-content-center">
+        <img src="/images/Logo_Seguros_Unimed.png" alt="unimed_seguros" class="col-2 img-fluid px-4 mx-2">
+        <img src="/images/logotipo.png" alt="santa_rita" class="col-2 img-fluid mx-2 py-2">
+        <img src="/images/logo-hospitala-transparente.png" alt="hospitalar" class="col-2 img-fluid mx-2 px-3">
+        <img src="/images/logo-amil-300x107_0.png" alt="amil" class="col-2 img-fluid mx-2">
+        <img src="/images/humana_saude.png" alt="humana_saude" class="col-2 img-fluid mx-2 py-2">
+        <img src="/images/grupo-notredame-intermedica-logo.png" alt="notredame" class="col-2 img-fluid mx-2">
+        <img src="/images/bradesco-logo-novo-2018.png" alt="bradesco" class="col-2 img-fluid mx-2 px-3">
+        <img src="/images/omint-logo.png" alt="omint" class="col-2 img-fluid mx-2">
+      </div>
+    </div>
   </body>
 
   <script src="/js/bootstrap.min.js"></script>
