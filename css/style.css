@@ -9729,10 +9729,10 @@ input[type="submit"].form-control:focus {
       height: 100%;
       display: block;
       line-height: 100px;
-      font-size: 13px;
+      font-size: 16px;
       /* padding: 0 15px; */
       font-weight: 600;
-      color: #222;
+      color: rgb(65, 65, 65)  ;
       transition: color 0.15s, height 0.3s, line-height 0.3s; }
     .main-menu > li > a.current,
     .main-menu > li:hover > a,
@@ -10793,7 +10793,7 @@ input[type="submit"].form-control:focus {
     width: 298px;
     height: 215px;
     font-size: 12px;
-    padding: 65px 40px 0 37px;
+    padding: 55px 40px 0 37px;
     color: #fff;
     background: url("../images/general-elements/testmonial-single.png") top center no-repeat; }
   .testmonial-single.ts-color-2 .ts-content {
@@ -10914,7 +10914,7 @@ input[type="submit"].form-control:focus {
 /*  [ 04 ] - Our Services
 =========================== */
 .our-services {
-  border-bottom: 1px solid #ff6060; }
+  border-bottom: 2px solid #0c5c30; }
   .our-services .section-inner {
     background: #1bc768 url(../images/files/our-services.png) top center/cover no-repeat; }
 

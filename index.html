@@ -1,128 +1,472 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-BR">
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+<head>
+  <!-- Meta
+	============================================= -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, intial-scale=1, max-scale=1" />
 
-    <style>
-      header {
-        height: 60px;
-      }
-      .principal {
-        height: 700px;
-        background: #5788c3;
-        background: -webkit-linear-gradient(
-          to left,
-          rgba(87, 136, 195, 0.5),
-          rgba(228, 228, 232, 0.5)
-        );
-        background: linear-gradient(
-          to left,
-          rgba(87, 136, 195, 0.5),
-          rgba(228, 228, 232, 0.5)
-        );
-        background-image: url("/images/25764.jpg");
-        background-size: cover;
-      }
-      .menu {
-        flex-grow: 10;
-        align-items: center;
-      }
-      .menu li {
-        display: inline-block;
-        text-decoration: none;
-        margin: 0px 25px;
-      }
-      .inferior {
-        height: 100px;
-        background-color: azure;
-      }
-      .meio {
-        height: 640px;
-        display: flex;
-        justify-content: center;
-      }
-      .meio img {
-        display: flex;
-        padding: 0px 50px;
-        width: 500px;
-        align-self: center;
-      }
-      .meio form {
-        padding: 0px 50px;
-      }
-    </style>
+  <!-- Stylesheets
+	============================================= -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/updates.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Open+Sans:400,400i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <title>Portal Saúde</title>
-  </head>
-  <body>
-    <div class="principal">
-      <header class="d-flex">
-        <img src="/images/logo.png" alt="Portal Saúde" class="offset-2" />
-        <nav class="d-flex menu">
-          <ul class="d-flex mx-auto mt-3">
-            <li><a href="#planoDeSaude"></a>Planos de Saúde</li>
-            <li><a href="#quemSomos"></a>Quem Somos</li>
-            <li><a href="#Contato"></a>Contato</li>
-          </ul>
-        </nav>
-      </header>
-      <div class="meio">
-        <div class="">
-          <img src="/images/medico.png" alt="médico1" class="img-fluid" />
-        </div>
-        <form>
-          <div class="form-group">
-            <label for="Nome">Nome</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputName"
-              aria-describedby="emailHelp"
-              placeholder=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              aria-describedby="emailHelp"
-              placeholder=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="telefone">Telefone</label>
-            <input
-              type="number"
-              class="form-control"
-              id="inputTelefone"
-              placeholder=""
-            />
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="inputPf" />
-            <label class="form-check-label" for="exampleCheck1"
-              >Pessoa física</label
-            >
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="inputPj" />
-            <label class="form-check-label" for="exampleCheck1"
-              >Pessoa jurídica</label
-            >
-          </div>
-          <button type="submit" class="btn btn-primary">ENVIAR</button>
-        </form>
-      </div>
+  <!-- Favicon
+	============================================= -->
+  <link rel="shortcut icon" href="images/general-elements/favicon/favicon.png" />
+  <link rel="apple-touch-icon" href="images/general-elements/favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/general-elements/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/general-elements/favicon/apple-touch-icon-114x114.png" />
+
+  <!-- Title
+	============================================= -->
+  <title>Portal Saúde</title>
+</head>
+
+<body>
+  <div id="scroll-progress"><span class="scroll-percent"></span></div>
+
+  <!-- Website Loading
+	============================================= -->
+  <div id="website-loading">
+    <div class="loader">
+      <span class="heart-beam"></span>
     </div>
-    <div class="inferior"></div>
-  </body>
+    <!-- .loader end -->
+  </div>
+  <!-- .website-loading end -->
 
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/popper.min.js"></script>
+  <!-- Document Full Container
+	============================================= -->
+  <div id="full-container background-ps">
+    <!-- Header
+		============================================= -->
+    <header id="header" class="style-1" data-scroll-index="0">
+      <div id="header-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="logo" href="#">
+                <img src="images/files/logo.png" data-logo-alt="images/files/logo-alt.png" alt="" />
+                <h5><span class="colored">Portal Saude</span></h5>
+                <!-- <span>Landing Template</span> </a> -->
+                <!-- .logo end -->
+
+                <ul id="main-menu" class="main-menu">
+                  <li><a data-scroll-nav="0" href="#header">INÍCIO</a></li>
+                  <li>
+                    <a data-scroll-nav="1" href="#contato">CONTATO</a>
+                  </li>
+                  <li>
+                    <a data-scroll-nav="2" href="#sobre">SOBRE</a>
+                  </li>
+                  <li>
+                    <a data-scroll-nav="3" href="#planosDeSaude">PLANOS DE SAÚDE</a>
+                  </li>
+                  <li>
+                    <a data-scroll-nav="4" href="#avaliacoes">AVALIAÇÕES</a>
+                  </li>
+                </ul>
+                <a class="
+                    header-btn
+                    scroll-to
+                    btn
+                    small
+                    colorful
+                    hover-transparent-colorful
+                  " href="#contato">CONTATO</a>
+                <div class="mobile-menu-btn hamburger hamburger--slider">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </div>
+                <!-- .mobile-menu-btn -->
+                <div class="clearfix"></div>
+                <div id="mobile-menu"></div>
+                <!-- #mobile-menu end -->
+            </div>
+            <!-- .col-md-12 end -->
+          </div>
+          <!-- .row end -->
+        </div>
+        <!-- .container end -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12"></div>
+            <!-- .col-md-12 end -->
+          </div>
+          <!-- .row end -->
+        </div>
+        <!-- .container end -->
+      </div>
+      <!-- #header-wrap end -->
+    </header>
+    <!-- #header end -->
+
+    <!-- Banner
+		============================================= -->
+    <section id="banner" class="fullscreen background-ps" data-scroll-index="0">
+      <div class="banner-parallax " data-parallax-bg-img="Background1.jpeg" data-stellar-background-ratio="0.9">
+        <div class="overlay-colored" data-bg-color="#fff" data-bg-color-opacity="0.05"></div>
+        <!-- .overlay-colored end -->
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-1">
+                <div class="banner-center-box text-center text">
+                  <h1>Conheça os melhores planos de saúde do mercado</h1>
+                  <div class="description">
+                    Tenha um atendimento personalizado a qualquer hora.
+                  </div>
+                  <a class="
+                    scroll-to
+                    btn
+                    colorful
+                    hover-transparent-colorful
+                  " href="#contato">CONTATO</a>
+                </div>
+                <!-- .banner-center-box end -->
+              </div>
+              <!-- .col-md-10 end -->
+            </div>
+            <!-- .row end -->
+          </div>
+          <!-- .container end -->
+        </div>
+        <!-- .slide-content end -->
+      </div>
+      <!-- .banner-parallax end -->
+    </section>
+    <!-- #banner end -->
+
+    <!-- Content
+		============================================= -->
+    <section id="content">
+      <div id="content-wrap">
+        <div id="contato" class="flat-section make-appointment" data-scroll-index="1">
+          <div class="section-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6 text-center hidden-xs">
+                  <img src="images/files/dr1.png" alt="dr1" />
+                </div>
+                <div class="
+                      col-md-3 col-sm-6 col-md-push-6
+                      text-center
+                      hidden-xs
+                    ">
+                  <img src="images/files/health-care.png" alt="" />
+                </div>
+                <div class="col-md-6 col-sm-12 col-md-pull-3">
+                  <div class="box-appointment-form">
+                    <h2>Deixe seu Contato</h2>
+                    <p>
+                      Quero te conhecer melhor! Preencha seus dados para um atendimento personalizado
+                    </p>
+                    <form id="appointment-form">
+                      <div class="af-notifications">
+                        <div class="af-notifications-cont"></div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" name="afName" id="afName" class="form-control" placeholder="Nome" />
+                      </div>
+                      <div class="form-group">
+                        <input type="text" name="afEmail" id="afEmail" class="form-control"
+                          placeholder="Seu Melhor E-mail" />
+                      </div>
+                      <div class="form-group">
+                        <input type="text" name="afPhoneNum" id="afPhoneNum" class="form-control"
+                          placeholder="Celular" />
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="inputPf" />
+                        <label class="form-check-label" for="check1">Pessoa física</label>
+                      </div>
+                      <!-- .form-group end -->
+                      <div class="form-group">
+                        <input type="submit" class="form-control" value="Enviar" />
+                        <img src="images/general-elements/cta-arrow-right.png" alt="" />
+                        <h6>Entre em contato: (43) 99175-7739</h6>
+                      </div>
+                      <!-- .form-group end -->
+                    </form>
+                    <!-- #appointment-form end -->
+                  </div>
+                  <!-- .box-appointment-form end -->
+                </div>
+                <!-- .col-md-6 end -->
+
+                <!-- .col-md-3 end -->
+              </div>
+              <!-- .row end -->
+            </div>
+            <!-- .container end -->
+          </div>
+          <!-- .section-content end -->
+        </div>
+        <!-- .flat-section end -->
+
+        <!-- === Watch Video =========== -->
+        <div id="sobre" class="parallax-section watch-video" data-scroll-index="2">
+          <div class="section-inner">
+            <div class="container">
+              <div class="row">
+                <div class="section-content">
+                  <div class="col-md-4">
+                    <div class="section-title text-white mt-70">
+                      <h2>Portal Saúde</h2>
+                      <p>
+                        Com a portal saúde você pode contratar um plano para sua família ou negócio sem complicação.
+                        Conheça nossos produtos e entre em contato conosco.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="col-md-4 col-sm-6 col-md-offset-2">
+                      <div class="box-info-1 text-white mb-50">
+                        <div class="box-content">
+                          <h4>Plano Empresarial</h4>
+                          <p>
+                            Através do CNPJ você poderá contratar um plano sob medida para o seu negócio
+                          </p>
+                        </div>
+                      </div>
+                      <div class="box-info-1 text-white mb-50">
+                        <div class="box-content">
+                          <h4>Plano Individual</h4>
+                          <p>
+                            Contrate somente para você ou contrate um plano familiar, com a Portal Saúde você encontrará
+                            a melhor opção para contratação.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-md-offset-2">
+                      <div class="box-info-1 text-white mb-50">
+                        <div class="box-content">
+                          <h4>Vantagens</h4>
+                          <p>
+                            Com a Portal Saúde você tem a opção de adquirir seu plano de acordo com a necessidade, pois
+                            somos especialistas e trabalhamos com todas as operadoras.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="box-info-1 text-white mb-50">
+                        <div class="box-content">
+                          <h4>Comodidade</h4>
+                          <p>
+                            Tranquilidade, assinatura eletrônica, implantação rápida e atendimento personalizado, esses
+                            são uns dos nossos benefícios
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .parallax-section end -->
+          <div id="planosDeSaude" class="parallax-section our-services" data-scroll-index="3">
+            <div class="section-inner">
+              <div class="container">
+                <div class="row">
+                  <div class="section-content">
+                    <div class="section-title text-white mt-5 text-center">
+                      <h2>Planos de Saúde</h2>
+                      <p>
+                        Conheça aqui todas as opções em planos de saúde familiar e empresarial, e fala sua cotação
+                        gratuitamente.
+                      </p>
+                    </div>
+                    <div class="img-planosSaude">
+                      <img src="/images/amil.png" alt="amil" style="width: 200px; height: 150px;">
+                      <img src="/images/sulAmerica.png" alt="sulAmerica">
+                      <img src="/images/bradesco.png" alt="bradesco">
+                      <img src="/images/unimed.png" alt="unimed">
+                      <img src="/images/hospitalar.png" alt="hospitalar">
+                    </div>
+                    <div class="img-planosSaude1">
+                      <img src="/images/notredame.png" alt="notredame">
+                      <img src="/images/humanaSaude.png" alt="humanaSaude">
+                      <img src="/images/santaRitaSaude.png" alt="santaRitaSaude">
+                      <img src="/images/omint.png" alt="omint" style="height: 200px; width: 200px;">
+                    </div>
+                  </div>
+                  <!-- .section-content end -->
+                </div>
+                <!-- .row end -->
+              </div>
+              <!-- .container end -->
+            </div>
+            <!-- .section-inner end -->
+          </div>
+          <!-- .parallax-section end -->
+
+          <!-- === Happy Clients =========== -->
+          <div id="avaliacoes" class="flat-section happy-clients" data-scroll-index="4">
+            <div class="section-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title colored text-center">
+                      <h2>AVALIAÇÕES</h2>
+                      <p>
+                        Confira o que os nossos clientes dizem sobre o atendimento personalizado que recebem da Portal
+                        Saúde
+                      </p>
+                    </div>
+                    <!-- .section-title end -->
+                  </div>
+                  <!-- .col-md-8 end -->
+                  <div class="col-md-12">
+                    <div class="testmonials-slider">
+                      <ul class="owl-carousel">
+                        <li>
+                          <div class="slide">
+                            <div class="testmonial-single">
+                              <div class="ts-content">
+                                Realmente me surpreendi com o Atendimento, vim de outro plano e fiquei muito satisfeito
+                                com os serviços oferecidos pelo Plano Hospitalar
+                              </div>
+                              <!-- .ts-content end -->
+                              <div class="ts-person">
+                                <span class="ts-img"><img src="/images/avaliacoes/circle3-1.png" alt="" /></span>
+                                <h4>Renato Sgarbi</h4>
+                              </div>
+                            </div>
+                            <!-- .testmonial-single end -->
+                          </div>
+                          <!-- .slide end -->
+                        </li>
+                        <li>
+                          <div class="slide">
+                            <div class="testmonial-single ts-color-2">
+                              <div class="ts-content">
+                                Definitivamente não tem produto melhor no mercado, e o que mais me surpreendeu foi a
+                                qualidade no atendimento ao Cliente
+                              </div>
+                              <!-- .ts-content end -->
+                              <div class="ts-person">
+                                <span class="ts-img"><img src="/images/avaliacoes/circle2-1.png" alt="" /></span>
+                                <h4>Pedro R. Silva</h4>
+                              </div>
+                            </div>
+                            <!-- .testmonial-single end -->
+                          </div>
+                          <!-- .slide end -->
+                        </li>
+                        <li>
+                          <div class="slide">
+                            <div class="testmonial-single">
+                              <div class="ts-content">
+                                Realmente me surpreendi com o Atendimento, vim de outro plano e fiquei muito satisfeita
+                                com os serviços oferecidos pela Unimed Seguros Saúde.
+                              </div>
+                              <!-- .ts-content end -->
+                              <div class="ts-person">
+                                <span class="ts-img"><img src="/images/avaliacoes/44.png" alt="" /></span>
+                                <h4>Marcos Souza</h4>
+                              </div>
+                            </div>
+                            <!-- .testmonial-single end -->
+                          </div>
+                          <!-- .slide end -->
+                        </li>
+                        <li>
+                          <div class="slide">
+                            <div class="testmonial-single ts-color-2">
+                              <div class="ts-content">
+                                Definitivamente não tem produto melhor no mercado, e o que mais me surpreendeu foi a
+                                questão do reembolso, isso é Unimed Seguros Saúde.
+                              </div>
+                              <!-- .ts-content end -->
+                              <div class="ts-person">
+                                <span class="ts-img"><img src="/images/avaliacoes/ant-rozetsky-256125.jpg"
+                                    alt="" /></span>
+                                <h4>Talita Rizzo</h4>
+                              </div>
+                            </div>
+                            <!-- .testmonial-single end -->
+                          </div>
+                          <!-- .slide end -->
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- .testmonials-slider end -->
+                  </div>
+                  <!-- .col-md-12 end -->
+                  <div class="col-md-4"></div>
+                  <!-- .col-md-4 end -->
+                  <div class="col-md-4"></div>
+                  <!-- .col-md-4 end -->
+                </div>
+                <!-- .row end -->
+              </div>
+              <!-- .container end -->
+            </div>
+            <!-- .section-content end -->
+          </div>
+          <!-- .flat-section end -->
+
+          <!-- === Our Services =========== -->
+
+          <!-- Footer Mini
+		============================================= -->
+          <footer id="footer-mini">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="copyrights-message">
+                    2017 © <span class="colored">Medical Template.</span> All Rights
+                    Reserved
+                  </div>
+                  <ul class="social-icons">
+                    <li>
+                      <a class="si-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a class="si-behance" href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a class="si-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                  <!-- .social-icons end -->
+                </div>
+                <!-- .col-md-12 end -->
+              </div>
+              <!-- .row end -->
+            </div>
+            <!-- .container end -->
+          </footer>
+          <!-- #footer-mini end -->
+        </div>
+        <!-- #full-container end -->
+
+        <a class="scroll-top" href="#"><img src="images/general-elements/scroll-top.png" alt="" /></a>
+
+        <!-- External JavaScripts
+	============================================= -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jRespond.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.min.js"></script>
+        <script src="js/hoverIntent.js"></script>
+        <script src="js/simple-scrollbar.min.js"></script>
+        <script src="js/superfish.js"></script>
+        <script src="js/scrollIt.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jssocials.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/functions.js"></script>
+</body>
+
 </html>
