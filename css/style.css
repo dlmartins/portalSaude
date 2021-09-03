@@ -4440,19 +4440,19 @@ Copyright (c) 2015 Daniel Eden
   background: #869791; }
 
 /*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ *  Font Awesome 4.6.3 by @davegandy - http://Roboto.io - @Roboto
+ *  License - http://Roboto.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 @font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontAwesome/fontawesome-webfont.eot?v=4.6.3");
-  src: url("../fonts/fontAwesome/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontAwesome/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontAwesome/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontAwesome/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontAwesome/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-family: 'Roboto';
+  /* src: url("../fonts/Roboto/Roboto-webfont.eot?v=4.6.3");
+  src: url("../fonts/Roboto/Roboto-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/Roboto/Roboto-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/Roboto/Roboto-webfont.woff?v=4.6.3") format("woff"), url("../fonts/Roboto/Roboto-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/Roboto/Roboto-webfont.svg?v=4.6.3#Robotoregular") format("svg"); */
   font-weight: normal;
   font-style: normal; }
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -9144,6 +9144,9 @@ strong {
 .scroll-top {
   position: fixed;
   bottom: -100px;
+  height: 70px;
+  width: 70px;
+  z-index: 1000;
   right: 20px; }
   .scroll-top.show {
     bottom: 30px; }
@@ -9785,7 +9788,7 @@ input[type="submit"].form-control:focus {
     right: 100% !important;
     left: auto !important; }
   .main-menu.sf-arrows a.sf-with-ul::after {
-    font-family: "FontAwesome";
+    font-family: "Roboto" sans-serif;
     font-size: 13px;
     color: #999; }
   .main-menu.sf-arrows > li > a.sf-with-ul::after {
@@ -9869,7 +9872,7 @@ input[type="submit"].form-control:focus {
       /*display: block;*/
       /* Useful if plugin not working */ }
   .mobile-menu.sf-arrows a.sf-with-ul::after {
-    font-family: "FontAwesome";
+    font-family: "Roboto";
     color: #999;
     position: absolute; }
   .mobile-menu.sf-arrows > li > a.sf-with-ul::after {
@@ -10488,7 +10491,7 @@ input[type="submit"].form-control:focus {
   .section-title p {
     margin-top: 5px;
     font-size: 14px;
-    line-height: 1.8; }
+    line-height: 2.5; }
 
 /* Parallax Section */
 .parallax-section {
@@ -10963,7 +10966,7 @@ input[type="submit"].form-control:focus {
   .list li + li {
     margin-top: 8px; }
   .list li::before {
-    font-family: "fontAwesome", "et-line";
+    font-family: "Roboto", "sans-serif";
     font-size: 18px;
     margin-right: 10px;
     color: #1bc768;
@@ -11077,7 +11080,7 @@ input[type="submit"].form-control:focus {
         .social-icons li a i::before, .social-icons li a i::after {
           transition: all 0.25s ease; }
         .social-icons li a i::after {
-          font-family: "fontAwesome";
+          font-family: "Roboto";
           font-size: 14px;
           display: block;
           text-align: center;

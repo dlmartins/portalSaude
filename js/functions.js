@@ -190,7 +190,7 @@ function scrollProgress() {
 // *** Scroll Top Button *** //
 function scrollTopButton() {
 	var windowScroll = $( window ).scrollTop();
-	if ( $( window ).scrollTop() > 800 ) {
+	if ( $( window ).scrollTop() > 100 ) {
 		$( ".scroll-top" ).addClass( "show" );
 	} else {
 		$( ".scroll-top" ).removeClass( "show" );
@@ -623,4 +623,11 @@ function convertHex( hex , opacity ){
 
     result = 'rgba('+r+', '+g+', '+b+', '+opacity+')';
     return result;
+}
+
+function showElements (){
+	$('#teste1').hide(10)
+	if
+		($(this).scrollTop()>200) {show(1000)}
+	
 }
