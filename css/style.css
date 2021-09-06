@@ -13042,7 +13042,8 @@ input[type="submit"].form-control:focus {
 }
 .main-menu li a {
   transition: all 0.15s;
-  font-family: "Ubuntu", "Droid Arabic Kufi", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 1000;
 }
 .main-menu > li {
   float: left;
@@ -14273,13 +14274,11 @@ input[type="submit"].form-control:focus {
 .box-preview-1 .box-content h4 {
   margin-bottom: 8px;
 }
-
 /*  [ 02 ] - Watch Video
 ========================= */
 .watch-video .section-inner {
   background-color: #648cff;
-  background-image: url("../images/files/watch-video-top.png"),
-    url("../images/files/watch-video-bottom.png");
+  background-image: url("../images/files/watch-video-top.png");
   background-position: top center, bottom center;
   background-repeat: no-repeat;
   background-size: contain;
