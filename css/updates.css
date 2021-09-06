@@ -6,9 +6,8 @@
   background-image: url("/images/files/Background1.jpeg");
 }
 .img-planosSaude {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+
 }
 .img-planosSaude img {
   height: 200px;
@@ -17,12 +16,80 @@
 }
 
 .img-planosSaude1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+
 }
 .img-planosSaude1 img {
   height: 200px;
   width: 300px;
   padding: 50px;
+}
+
+.check-box-diego {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.check-box-diego input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.section-title2 {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 65px;
+}
+.section-title2.text-white h2 {
+  color: #fff;
+}
+.section-title2.text-white h2::after {
+  background: #fff;
+}
+.section-title2.text-white p {
+  color: #eee;
+}
+.section-title2.colored h2 {
+  color: #1bc768;
+}
+.section-title2.colored h2::after {
+  background: #1bc768;
+}
+.section-title2.colored p {
+  color: #999;
+}
+.section-title2.text-center h2::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title2 h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  text-transform: capitalize !important;
+  position: relative;
+}
+.section-title2 h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #222;
+  margin: 15px 0 25px;
+}
+.section-title2 .separator-dots {
+  margin: 20px 0 16px;
+}
+.section-title2 p {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
 }
