@@ -12977,7 +12977,8 @@ input[type="submit"].form-control:focus {
 @media (min-width: 1200px) {
   #header.style-1.sticky,
   #header.style-1.sticky #header-wrap {
-    height: 80px;
+    padding-top: 10px;
+    height: 100px;
   }
   #header.style-1.sticky .logo,
   #header.style-1.sticky .header-btn,
@@ -13439,7 +13440,7 @@ input[type="submit"].form-control:focus {
 #header-sticky-wrap {
   text-align: center;
   background: #fff;
-  height: 75px;
+  height: 100px;
   width: 100%;
   left: 0;
   right: 0;
