@@ -4,9 +4,12 @@
 
 .background-ps {
   background-image: url("/images/files/Background1.jpeg");
+  /* width: 100%;
+  height: auto; */
 }
 .img-planosSaude {
   box-sizing: border-box;
+  background-size: cover;
 
 }
 .img-planosSaude img {
