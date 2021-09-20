@@ -29,7 +29,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  }
+}
 
 body {
   margin: 0;
@@ -12755,7 +12755,7 @@ textarea.form-control,
 select,
 select.form-control {
   width: 100%;
-  font-size: 13px;
+  font-size: 11px;
   height: 48px;
   line-height: 48px;
   border-radius: 0;
@@ -13520,7 +13520,7 @@ input[type="submit"].form-control:focus {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 992px) {
@@ -14052,8 +14052,8 @@ input[type="submit"].form-control:focus {
 /* Box Appointment Form */
 .box-appointment-form {
   position: relative;
-  padding: 60px 45px;
-  width: calc(100% - 30px);
+  padding: 60px 25px;
+  width: calc(100% - 15px);
   margin: auto;
   background-color: #1bc768;
   background-image: url("../images/general-elements/appointment-form-top.png"),
@@ -14900,7 +14900,7 @@ input[type="submit"].form-control:focus {
 
   /* Scroll Top */
   .scroll-top {
-    display: none !important;
+    display: block !important;
   }
 }
 

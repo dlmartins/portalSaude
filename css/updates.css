@@ -10,7 +10,6 @@
 .img-planosSaude {
   box-sizing: border-box;
   background-size: cover;
-
 }
 .img-planosSaude img {
   height: 200px;
@@ -20,7 +19,6 @@
 
 .img-planosSaude1 {
   box-sizing: border-box;
-
 }
 .img-planosSaude1 img {
   height: 200px;
@@ -95,4 +93,18 @@
   margin-top: 5px;
   font-size: 16px;
   font-weight: bold;
+}
+
+.form-phone {
+  display: flex;
+}
+
+.form-phone-ddd {
+  width: 100px;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.form-phone-num {
+  flex-grow: 3;
 }

@@ -286,14 +286,14 @@
   }
 
   // *** Scroll Top Button *** //
-  function scrollTopButton() {
-    var windowScroll = $(window).scrollTop();
-    if ($(window).scrollTop() > 100) {
-      $(".scroll-top").addClass("show");
-    } else {
-      $(".scroll-top").removeClass("show");
-    }
-  }
+  // function scrollTopButton() {
+  //   var windowScroll = $(window).scrollTop();
+  //   if ($(window).scrollTop() > 100) {
+  //     $(".scroll-top").addClass("show");
+  //   } else {
+  //     $(".scroll-top").removeClass("show");
+  //   }
+  // }
 
   //   $(".scroll-top, .scroll-top-btn").click(function (e) {
   //     e.preventDefault();
