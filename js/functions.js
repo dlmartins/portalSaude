@@ -286,14 +286,14 @@
   }
 
   // *** Scroll Top Button *** //
-  // function scrollTopButton() {
-  //   var windowScroll = $(window).scrollTop();
-  //   if ($(window).scrollTop() > 100) {
-  //     $(".scroll-top").addClass("show");
-  //   } else {
-  //     $(".scroll-top").removeClass("show");
-  //   }
-  // }
+  function scrollTopButton() {
+    var windowScroll = $(window).scrollTop();
+    if ($(window).scrollTop() > 100) {
+      $(".scroll-top").addClass("show");
+    } else {
+      $(".scroll-top").removeClass("show");
+    }
+  }
 
   //   $(".scroll-top, .scroll-top-btn").click(function (e) {
   //     e.preventDefault();
@@ -750,9 +750,15 @@
         afPhoneNum: {
           required: true,
           number: true,
-          minlength: 11,
-          maxlength: 11,
+          minlength: 8,
+          maxlength: 9,
         },
+        afPhoneDdd: {
+          required: true,
+          number: true,
+          minlength: 2,
+          maxlength: 2,
+        }
       },
     });
 
@@ -773,13 +779,14 @@
   function afSubmitForm() {
     var a = $("#afName").val(),
       b = $("#afEmail").val(),
-      c = $("#afPhoneNum").val();
-    d = $("#inputPf").val();
-    e = $("inputPj").val();
+      c = $("#afPhoneDdd").val(),
+      d = $("#afPhoneNum").val(),
+    e = $("#inputPf").val(),
+    f = $("inputPj").val();
     $.ajax({
       type: "POST",
       url: "./php/af-process.php",
-      data: "afName=" + a + "&afEmail=" + b + "&afPhoneNum=" + c,
+      data: "afName=" + a + "&afEmail=" + b + "&afPhoneDdd=" + c + "&afPhoneNum=" + d + "&inputPf=" + e + "&inputPj=" + f,
       success: function (a) {
         "success" == a ? afSuccess() : (afError(), afSubmitMSG(!1, a));
       },

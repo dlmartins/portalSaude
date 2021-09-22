@@ -1,13 +1,16 @@
 <?php
 $name = $_POST["afName"];
 $email = $_POST["afEmail"];
+$phone_ddd = $_POST["afPhoneDdd"];
 $phone_number = $_POST["afPhoneNum"];
+$pj = $_POST["inputPj"];
+$pf = $_POST["inputPf"];
  
-$EmailTo = "moradxd@gmail.com";
-$Subject = "Message from " . $name;
+$EmailTo = "martins.diegoluis@gmail.com";
+$Subject = "Novo cadastro no site de " . $name;
  
 // prepare email body text
-$Body = "Name: ";
+$Body = "Nome: ";
 $Body .= $name;
 $Body .= "\n";
  
@@ -15,7 +18,7 @@ $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
  
-$Body .= "Phone Number: ";
+$Body .= "Telefone: (".$phone_ddd.") ";
 $Body .= $phone_number;
 $Body .= "\n";
  

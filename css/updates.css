@@ -108,3 +108,23 @@
 .form-phone-num {
   flex-grow: 3;
 }
+
+.social-img {
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  align-items: center;
+}
+
+.social-conteiner {
+  display: ;
+}
+
+.social-conteiner ul {
+  display: inline;
+  list-style: none;
+}
+
+.social-conteiner li {
+  display: inline-flex;
+}
