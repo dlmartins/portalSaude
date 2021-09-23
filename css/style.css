@@ -13514,8 +13514,8 @@ input[type="submit"].form-control:focus {
   overflow: hidden;
   height: 650px;
   position: relative;
-  align-content: center;
-  background-image: url("/images/files/Background2.jpeg");
+  align-content: top;
+  background-image: url("../images/files/Background2.jpeg");
   background-color: #ccc;
   background-position: top center;
   background-size: cover;
@@ -13526,7 +13526,7 @@ input[type="submit"].form-control:focus {
 @media (min-width: 992px) {
   .fullscreen .banner-parallax,
   .fullscreen .banner-slider {
-    background-image: url("/images/files/Background1.jpeg");
+    background-image: url("../images/files/Background1.jpeg");
     height: 100% !important;
     text-align: left;
   }

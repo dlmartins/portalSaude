@@ -112,12 +112,8 @@
 .social-img {
   width: 40px;
   height: 40px;
-  margin: 15px;
+  margin: 30px 15px;
   align-items: center;
-}
-
-.social-conteiner {
-  display: ;
 }
 
 .social-conteiner ul {

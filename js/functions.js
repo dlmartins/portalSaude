@@ -92,7 +92,7 @@
       $("*[data-bg-img]").each(function () {
         var a = $(this).data("bg-img");
         $(this).css("background-image", "url('" + a + "')");
-      })
+      });
     //   $(".banner-parallax").each(function () {
     //     // var a = $(this).data("parallax-bg-img");
     //     if (screen.width > 600) {
@@ -758,7 +758,7 @@
           number: true,
           minlength: 2,
           maxlength: 2,
-        }
+        },
       },
     });
 
@@ -781,12 +781,24 @@
       b = $("#afEmail").val(),
       c = $("#afPhoneDdd").val(),
       d = $("#afPhoneNum").val(),
-    e = $("#inputPf").val(),
-    f = $("inputPj").val();
+      e = $("#inputPf").val(),
+      f = $("inputPj").val();
     $.ajax({
       type: "POST",
       url: "./php/af-process.php",
-      data: "afName=" + a + "&afEmail=" + b + "&afPhoneDdd=" + c + "&afPhoneNum=" + d + "&inputPf=" + e + "&inputPj=" + f,
+      data:
+        "afName=" +
+        a +
+        "&afEmail=" +
+        b +
+        "&afPhoneDdd=" +
+        c +
+        "&afPhoneNum=" +
+        d +
+        "&inputPf=" +
+        e +
+        "&inputPj=" +
+        f,
       success: function (a) {
         "success" == a ? afSuccess() : (afError(), afSubmitMSG(!1, a));
       },
