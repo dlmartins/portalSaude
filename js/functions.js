@@ -781,8 +781,8 @@
       b = $("#afEmail").val(),
       c = $("#afPhoneDdd").val(),
       d = $("#afPhoneNum").val(),
-      e = $("#inputPf").val(),
-      f = $("inputPj").val();
+      e = $("input[name=inputPessoa]:checked").val(),
+      f = $("#afIdades").val();
     $.ajax({
       type: "POST",
       url: "./php/af-process.php",
@@ -795,9 +795,9 @@
         c +
         "&afPhoneNum=" +
         d +
-        "&inputPf=" +
+        "&inputPessoa=" +
         e +
-        "&inputPj=" +
+        "&afIdades=" +
         f,
       success: function (a) {
         "success" == a ? afSuccess() : (afError(), afSubmitMSG(!1, a));

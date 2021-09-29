@@ -3,15 +3,9 @@ $name = $_POST["afName"];
 $email = $_POST["afEmail"];
 $phone_ddd = $_POST["afPhoneDdd"];
 $phone_number = $_POST["afPhoneNum"];
-// $pj = $_POST["inputPj"];
-$inputRadio = isset($_POST["pfpj"]);
+$inputPessoa = $_POST["inputPessoa"];
+$idades = $_POST["afIdades"];
 
-// if (isset($_POST['pfpj']) && $_POST['pfpj'] == 'pf') {
-//     $inputPf_Pj = "Pessoa Fisica";
-//   } else {
-//     $inputPf_Pj = "Pessoa Jurídica";
-//   }
- 
 $EmailTo = "martins.diegoluis@gmail.com";
 $Subject = "Novo cadastro no site de " . $name;
  
@@ -28,7 +22,11 @@ $Body .= "Telefone: (".$phone_ddd.") ";
 $Body .= $phone_number;
 $Body .= "\n";
 
-$Body .= $inputRadio;
+$Body .= "Idades: ";
+$Body .= $idades;
+$Body .= "\n";
+
+$Body .= $inputPessoa;
 $Body .= "\n";
  
 // send email

@@ -12281,7 +12281,7 @@ h6 a:hover {
 .text-white h4,
 .text-white h5,
 .text-white h6 {
-  color: #fff;
+  color: #414141;
 }
 
 /* Main Heading */
@@ -13530,6 +13530,9 @@ input[type="submit"].form-control:focus {
     height: 100% !important;
     text-align: left;
   }
+  .description{
+    width: 500px !important;
+  }
 }
 
 .video-background {
@@ -13837,6 +13840,7 @@ input[type="submit"].form-control:focus {
   margin-bottom: 40px;
   color: rgb(65, 65, 65);
   line-height: 1.8;
+  width: 250px;
 }
 
 /* Banner Center Box */
@@ -13957,13 +13961,13 @@ input[type="submit"].form-control:focus {
   padding-bottom: 65px;
 }
 .section-title.text-white h2 {
-  color: #fff;
+  color: #414141;
 }
 .section-title.text-white h2::after {
-  background: #fff;
+  background: #414141;
 }
 .section-title.text-white p {
-  color: #eee;
+  color: #414141;
 }
 .section-title.colored h2 {
   color: #1bc768;
@@ -14281,8 +14285,7 @@ input[type="submit"].form-control:focus {
 /*  [ 02 ] - Watch Video
 ========================= */
 .watch-video .section-inner {
-  background-color: #648cff;
-  background-image: url("../images/files/watch-video-top.png");
+  background-color: #f8f8f8 ;
   background-position: top center, bottom center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -14298,13 +14301,13 @@ input[type="submit"].form-control:focus {
   font-size: 48px;
   margin-bottom: 3px;
   font-weight: 400;
-  color: #fff;
+  color: #414141;
 }
 
 .box-counter h5 {
   font-weight: 400;
   text-transform: capitalize !important;
-  color: #fff;
+  color: #414141;
   margin-bottom: 0;
 }
 
@@ -14517,7 +14520,8 @@ input[type="submit"].form-control:focus {
   /* border-bottom: 2px solid #0c5c30; */
 }
 .our-services .section-inner {
-  background-image: linear-gradient(#1bc768, #f8f8f8);
+  background-color: #648cff;
+  background-image: url("../images/files/watch-video-top.png");
 }
 
 /* Box Info 1 */
@@ -14525,10 +14529,10 @@ input[type="submit"].form-control:focus {
   position: relative;
 }
 .box-info-1.text-white {
-  color: #fff;
+  color: #414141;
 }
 .box-info-1.text-white p {
-  color: rgba(255, 255, 255, 0.85);
+  color: #414141;
 }
 .box-info-1 .box-icon {
   float: left;
@@ -14666,7 +14670,7 @@ input[type="submit"].form-control:focus {
   color: #414141;
   position: relative;
   top: 3px;
-  display: inline-block;
+  display: block;
   font-family: "Roboto", sans-serif;
 }
 

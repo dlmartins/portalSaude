@@ -46,3 +46,9 @@ var $ = jQuery.noConflict();
 } )( jQuery );
 
 
+// const inputRadioBox = function(pf, pj){
+// 	pf = $("#inputPessoaF")
+// 	pj = $("inputPessoaJ")
+
+// 	if()
+// }

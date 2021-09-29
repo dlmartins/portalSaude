@@ -124,3 +124,9 @@
 .social-conteiner li {
   display: inline-flex;
 }
+
+.img-divisa{
+  display: flex;
+  width: 100%;
+  align-items: top;
+}

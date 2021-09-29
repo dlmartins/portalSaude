@@ -1,0 +1,7 @@
+Cores site Portal Saude
+
+cinza claro - #f8f8f8
+verde formulário - #1ac768
+azul - #648cff
+verde logo - #6dac4d
+azl logo - #4a68ad
