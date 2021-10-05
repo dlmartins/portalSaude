@@ -125,8 +125,11 @@
   display: inline-flex;
 }
 
-.img-divisa{
-  display: flex;
+.img-divisa {
+  display: relative;
   width: 100%;
-  align-items: top;
+  height: 200px;
+  margin-top: -120px;
+  background-image: url("/images/dobraPaginas/dobra1.png");
+  background-size: 100% 100%;
 }

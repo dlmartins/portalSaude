@@ -12221,13 +12221,14 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
   text-transform: uppercase;
   font-family: "Ubuntu", "Droid Arabic Kufi", sans-serif;
   color: #222;
   font-weight: 700;
   line-height: 1.4;
+  text-align: center;
 }
 
 h1 {
@@ -12755,7 +12756,7 @@ textarea.form-control,
 select,
 select.form-control {
   width: 100%;
-  font-size: 11px;
+  font-size: 14px;
   height: 48px;
   line-height: 48px;
   border-radius: 0;
