@@ -1,0 +1,135 @@
+/* =====================================================================
+ *   Addtional Updates or Changes
+ * =================================================================== */
+
+.background-ps {
+  background-image: url("/images/files/Background1-1.jpeg");
+  /* width: 100%;
+  height: auto; */
+}
+.img-planosSaude {
+  box-sizing: border-box;
+  background-size: cover;
+}
+.img-planosSaude img {
+  height: 200px;
+  width: 200px;
+  padding: 50px;
+}
+
+.img-planosSaude1 {
+  box-sizing: border-box;
+}
+.img-planosSaude1 img {
+  height: 200px;
+  width: 300px;
+  padding: 50px;
+}
+
+.check-box-diego {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.check-box-diego input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.section-title2 {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 65px;
+}
+.section-title2.text-white h2 {
+  color: #fff;
+}
+.section-title2.text-white h2::after {
+  background: #fff;
+}
+.section-title2.text-white p {
+  color: #eee;
+}
+.section-title2.colored h2 {
+  color: #1bc768;
+}
+.section-title2.colored h2::after {
+  background: #1bc768;
+}
+.section-title2.colored p {
+  color: #999;
+}
+.section-title2.text-center h2::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title2 h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  text-transform: capitalize !important;
+  position: relative;
+}
+.section-title2 h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #222;
+  margin: 15px 0 25px;
+}
+.section-title2 .separator-dots {
+  margin: 20px 0 16px;
+}
+.section-title2 p {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-phone {
+  display: flex;
+}
+
+.form-phone-ddd {
+  width: 100px;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.form-phone-num {
+  flex-grow: 3;
+}
+
+.social-img {
+  width: 40px;
+  height: 40px;
+  margin: 30px 15px;
+  align-items: center;
+}
+
+.social-conteiner ul {
+  display: inline;
+  list-style: none;
+}
+
+.social-conteiner li {
+  display: inline-flex;
+}
+
+.img-divisa {
+  display: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: -120px;
+  background-image: url("/images/dobraPaginas/dobra1.png");
+  background-size: 100% 100%;
+}
