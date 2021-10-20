@@ -6,7 +6,7 @@ $phone_number = $_POST["afPhoneNum"];
 $inputPessoa = $_POST["inputPessoa"];
 $idades = $_POST["afIdades"];
 
-$EmailTo = "martins.diegoluis@gmail.com";
+$EmailTo = "vrarroscorretora@gmail.com";
 $Subject = "Novo cadastro no site de " . $name;
  
 // prepare email body text
