@@ -806,10 +806,11 @@
   }
   function afSuccess() {
     var a = $(".af-notifications").data("success-msg"),
-      b = "Obrigado! Em breve entraremos em contato.",
-      c = a ? a : b;
+      b = "Obrigado!",
+      e = window.open("./obrigado.html"),
+      c = a ? a : b + e;
     $("#appointment-form")[0].reset();
-    var d = '<i class="af-success-icon fa fa-check"></i>' + c;
+    var d = '<i class="af-success-icon fa fa-check"></i>' + e;
     afSubmitMSG(!0, d),
       $(".af-notifications-cont").addClass("sent"),
       $(".af-notifications").css("opacity", 0),
@@ -824,20 +825,20 @@
       $(".af-notifications").slideDown(300).animate({ opacity: 1 }, 300),
       $(".af-notifications-cont").removeClass("sent");
   }
-  function afSubmitMSG(a, b) {
-    var c;
-    (c = "shake animated"),
-      $(".af-notifications")
-        .delay(300)
-        .addClass(c)
-        .one(
-          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-          function () {
-            $(this).removeClass("shake bounce animated");
-          }
-        ),
-      $(".af-notifications").children(".af-notifications-cont").html(b);
-  }
+  // function afSubmitMSG(a, b) {
+  //   var c;
+  //   (c = "shake animated"),
+  //     $(".af-notifications")
+  //       .delay(300)
+  //       .addClass(c)
+  //       .one(
+  //         "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+  //         function () {
+  //           $(this).removeClass("shake bounce animated");
+  //         }
+  //       ),
+  //     $(".af-notifications").children(".af-notifications-cont").html(b);
+  // }
 })(jQuery);
 
 function convertHex(hex, opacity) {

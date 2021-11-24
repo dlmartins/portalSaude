@@ -1,7 +1,6 @@
 const gulp = require("gulp");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
-const sass = require("gulp-sass");
 const uglifycss = require("gulp-uglifycss");
 const concat = require("gulp-concat");
 const htmlmin = require("gulp-htmlmin");
